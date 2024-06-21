@@ -6,9 +6,11 @@ def fb(n):
     elif n % 5 == 0:
         return "Buzz"
     else:
-        return str(n)
+        return ""
 
-i =1
-while i <= 20:
-    print(i, fb(i))
-    i=i+ 1
+for i in range(1, 21):
+    result = fb(i)
+    if result:
+        print(f"{i} {result}")
+    else:
+        print(i)
